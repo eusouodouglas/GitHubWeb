@@ -1,0 +1,148 @@
+*{margin:0px;
+padding:0px;
+}
+/* Utilizo essas Tags para centralizar do o conteúdo na página e remover os  espaços entre as DIV  */
+
+body {
+	font-family:Arial, Helvetica, sans-serif; /*Tipo da fonte*/
+	color:#FFF; /* cor da fonte */
+	font-size:12px; /* tamanho da fonte */
+	background-color:#989898     	; /* cor do background */
+	background-image:url(../img/back.jpg);
+
+}
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+::-webkit-scrollbar {
+    width: 20px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #DAA520;
+}
+/* Aqui se define a formatação da página toda costumo apenas formatar background, cor e tamanho da Font */
+
+.cabecalho{
+	width:980px;         /* Largura */
+	height:262px;     /* Altura */
+	margin:auto;     /* Margin deixa a div centralizada na página */
+}
+/* Aqui defino o Tamanho do topo do site  Logo Banner e Menu */
+
+.logo{
+	width:410px;
+	height:220px;
+	float:left;     /* Faz com que a DIV se ajuste sempre do lado esquerdo */
+
+}
+
+/* Float funciona da seguinte forma no caso o "left" ele ajusta os elementos do lado esquerdo, um ao lado do outro, quando não houver espaço suficiente para o elemento ele o joga pra baixo ainda ajustado a esquerda */
+
+.banner { 
+    width:570px;
+	height:220px;
+	float:left;
+
+}
+
+/* Formatação do Menu */
+
+#menu ul {
+    padding:15px;
+    margin:0px;
+    background-color:#DAA520;
+    list-style:none;
+	font-family: helvetica; 
+	font-size: medium;  
+}
+#menu ul li { display: inline; }
+
+#menu ul li a {
+    padding: 10px 27px;
+    display: inline-block;
+
+    /* visual do link */
+    background-color:#DAA520;
+    color: #333;
+    text-decoration: none;
+    border-bottom:3px solid #DAA520;
+}
+#menu ul li a:hover {
+    background-color:#D6D6D6;
+    color: #6D6D6D;
+    border-bottom:3px solid #EA0000;
+}
+
+
+/* Main content */
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+
+/* Termina aqui o cabeçalho --------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* conteúdo ( Meio do site site onde fica a maior parte da informação ) ------------------------------------------------------------------------------------- */
+
+.conteudo { 
+	width:980px;
+	height:408px;
+	background-color:#F2F2F2   ;
+	color:#000;
+	margin:auto;
+}
+.conteudo h1{
+	color:#06C;
+	padding-left:15px;
+	padding-top:10px;
+}
+.conteudo p{
+	padding-left:15px;
+	padding-top:10px;
+	font-size:14px;
+}
+.texto{
+	width:650px;
+	height:auto; /* O height fica com o tamanho indeterminado, ira depender do conteudo que estiver dentro, se tratando de texto é bom utilizar height auto pois os textos podem variar de tamanho */
+	float:left;
+}
+.foto{
+	width:330px;
+	height:auto;
+	float:left;
+}
+
+.foto img{
+	padding:15px; /* as imagens dentro de foto terão um prenchimento de 15px de cada lado */
+}
+
+/* Termina aqui o conteúdo -------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.rodape{
+	width:965px;
+	height:28px;
+	background-image:url(../img/bg-rodape.jpg);
+	background-repeat:no-repeat;
+	padding-top:70px;
+	padding-left:15px;
+	margin:auto;
+}
+
+#botao1{ text-align: left }
+.botaoEnviar{
+    width: 100px;
+    text-align: center;
+    padding: 3px 4px;
+    margin: 15px;
+    font-size: 16px;
+}
+#botao{ text-align: center }
+.botaoEnviar2{
+    width: 100px;
+    text-align: center;
+    padding: 3px 4px;
+   
+    background-color: #FCC302;
+    font-size: 16px;
+}

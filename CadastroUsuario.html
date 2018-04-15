@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html>
+
+<head>
+
+<title>WEB</title>
+
+<link href="css/estilo.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Aqui chamamos o arquivo estilo.css da pasta "CSS"   -->
+
+
+</head>
+
+<body>
+
+<!-- a Tag DIV são caixas que recebem a formatação do arquivo CSS, escrevemos "<div ></div>" assim ela fica sem formatação, para chamarmos a formatação do arquivo CSS, escrevemos "<div class="cabecalho" ></div>" com as "class" chamamos a class que foi criada no css, no caso a class "cabelhalho"  -->
+
+<!-- A "class" pode ser usada em outros elementos alem da "DIV" -->
+
+
+<div class="cabecalho" >
+
+                <div class="logo" >                
+                <a href="index.html"><img src="img/logo.jpg" width="410" height="220" title="Ir para página inicial"></a><!-- Insere a imagem do logo da pasta IMG -->
+
+                </div><!-- Fim Logo -->
+                
+                
+                <div class="banner" >
+                <img src="img/banner.jpg" width="570" height="220" ;><!-- Insere a imagem do banner da pasta IMG -->
+
+                </div><!-- Fim Banner -->
+                         
+                      
+                <div id="menu">
+        
+                <ul >
+                   
+                <li><a href="Institucional.html" > Institucional </a></li> <!-- link menu -->
+                <li><a href="FaleConosco.html" > Fale Conosco </a></li> <!-- link menu -->
+                <li><a href="Anuncios.html" > Anúncios </a></li> <!-- link menu -->
+                <li><a href="CadastroUsuario.html" > Cadastro de usuários </a></li> <!-- link menu -->
+                <li><a href="Login.html" > Login </a></li> <!-- link menu -->
+                <li><a href="CadastroAnuncio.html" > Cadastro de anúncios </a></li> <!-- link menu -->
+            
+                </ul>
+                
+                </div>
+
+                 
+                
+</div> <!-- Fim Cabeçalho -->
+
+<div class="conteudo" >
+
+                  
+                   
+                   
+                           <!-- DADOS PESSOAIS-->
+<fieldset>
+    <fieldset style = "width: 50%; margin: 10px auto;">
+ <legend>Dados Pessoais</legend>
+ <table cellspacing="10">
+  <tr>
+   <td>
+    <label for="nome">Nome: </label>
+   </td>
+   <td align="center">
+    <input type="text" name="email">
+   </td>
+   <td>
+    <label for="sobrenome">Sobrenome: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="sobrenome">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label>Nascimento: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="dia" size="2" maxlength="2" value="dd"> 
+   <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
+   <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="rg">RG: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="rg" size="13" maxlength="13"> 
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label>CPF:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
+   </td>
+  </tr>
+ </table>
+</fieldset>
+
+<br />
+<!-- ENDEREÇO -->
+<fieldset>
+    <fieldset style = "width: 53%; margin: 10px auto;">
+ <legend>Dados de Endereço</legend>
+ <table cellspacing="10">
+
+  <tr>
+   <td>
+    <label for="rua">Rua:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="rua">
+   </td>
+   <td>
+    <label for="numero">Numero:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="numero" size="4">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="bairro">Bairro: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="bairro">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="estado">Estado:</label>
+   </td>
+   <td align="left">
+    <select name="estado"> 
+    <option value="ac">Acre</option> 
+    <option value="al">Alagoas</option> 
+    <option value="am">Amazonas</option> 
+    <option value="ap">Amapá</option> 
+    <option value="ba">Bahia</option> 
+    <option value="ce">Ceará</option> 
+    <option value="df">Distrito Federal</option> 
+    <option value="es">Espírito Santo</option> 
+    <option value="go">Goiás</option> 
+    <option value="ma">Maranhão</option> 
+    <option value="mt">Mato Grosso</option> 
+    <option value="ms">Mato Grosso do Sul</option> 
+    <option value="mg">Minas Gerais</option> 
+    <option value="pa">Pará</option> 
+    <option value="pb">Paraíba</option> 
+    <option value="pr">Paraná</option> 
+    <option value="pe">Pernambuco</option> 
+    <option value="pi">Piauí</option> 
+    <option value="rj">Rio de Janeiro</option> 
+    <option value="rn">Rio Grande do Norte</option> 
+    <option value="ro">Rondônia</option> 
+    <option value="rs">Rio Grande do Sul</option> 
+    <option value="rr">Roraima</option> 
+    <option value="sc">Santa Catarina</option> 
+    <option value="se">Sergipe</option> 
+    <option value="sp">São Paulo</option> 
+    <option value="to">Tocantins</option> 
+   </select>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="cidade">Cidade: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="cidade">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="cep">CEP: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
+   </td>
+  </tr>
+ </table>
+</fieldset>
+
+<script>
+                        function funcao1()
+                        {
+                        alert("Cadastro efetivado com sucesso!");
+                        }
+                        </script>
+
+<div id="botao">
+                        <input type="button" onclick="funcao1()" value="Cadastrar" class="botaoEnviar2" />
+                        </div>
+
+</form>
+                    </div><!-- Fim Texto -->
+                    
+                  
+                    
+</div><!-- Fim conteudo -->
+
+
+<div class="rodape" > <!-- Inicio de rodape -->
+<p style="text-align:center;">© Copyright Alugaqui, todos os direitos reservados </p> <!-- Insere texto de rodape -->
+</div><!-- Fim rodape -->
+
+
+</body>
+</html>

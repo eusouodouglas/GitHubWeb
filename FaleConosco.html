@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html>
+
+<head>
+
+<title>WEB</title>
+
+<link href="css/estilo.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Aqui chamamos o arquivo estilo.css da pasta "CSS"   -->
+
+
+</head>
+
+<body>
+
+<!-- a Tag DIV são caixas que recebem a formatação do arquivo CSS, escrevemos "<div ></div>" assim ela fica sem formatação, para chamarmos a formatação do arquivo CSS, escrevemos "<div class="cabecalho" ></div>" com as "class" chamamos a class que foi criada no css, no caso a class "cabelhalho"  -->
+
+<!-- A "class" pode ser usada em outros elementos alem da "DIV" -->
+
+
+<div class="cabecalho" >
+
+                <div class="logo" >                
+                <a href="index.html"><img src="img/logo.jpg" width="410" height="220" title="Ir para página inicial"></a><!-- Insere a imagem do logo da pasta IMG -->
+
+                </div><!-- Fim Logo -->
+                
+                
+                <div class="banner" >
+                <img src="img/banner.jpg" width="570" height="220" ;><!-- Insere a imagem do banner da pasta IMG -->
+
+                </div><!-- Fim Banner -->
+                         
+                      
+                <div id="menu">
+        
+                <ul >
+                   
+                <li><a href="Institucional.html" > Institucional </a></li> <!-- link menu -->
+                <li><a href="FaleConosco.html" > Fale Conosco </a></li> <!-- link menu -->
+                <li><a href="Anuncios.html" > Anúncios </a></li> <!-- link menu -->
+                <li><a href="CadastroUsuario.html" > Cadastro de usuários </a></li> <!-- link menu -->
+                <li><a href="Login.html" > Login </a></li> <!-- link menu -->
+                <li><a href="CadastroAnuncio.html" > Cadastro de anúncios </a></li> <!-- link menu -->
+            
+                </ul>
+                
+                </div>
+
+                 
+                
+</div> <!-- Fim Cabeçalho -->
+
+<div class="conteudo" >
+
+                    <div class="texto" >
+                    <h1>Fale Conosco</h1>
+                    
+                    
+                        <p> 
+                        Nome:<br /> 
+                        <input type="text" size="30" name="nome"> 
+                        </p>   
+                        
+                        <p>
+                        E-mail:<br /> 
+                        <input type="text" size="30" name="replyto"> 
+                        </p>   
+                        
+                        <p> 
+                        Comentários:<br /> 
+                        <textarea name="message" rows="10" cols="30"></textarea>
+                        </p>   
+                        
+                        <script>
+                        function funcao1()
+                        {
+                        alert("Mensagem enviada com sucesso!");
+                        }
+                        </script>
+                        
+                        <body>
+                         <div id="botao1">
+                        <input type="button" onclick="funcao1()" value="Enviar" class="botaoEnviar" />
+                        </div>
+                                            </form>
+                    </div><!-- Fim Texto -->
+                    
+                    
+                    
+</div><!-- Fim conteudo -->
+
+
+<div class="rodape" > <!-- Inicio de rodape -->
+<p style="text-align:center;">© Copyright Alugaqui, todos os direitos reservados </p> <!-- Insere texto de rodape -->
+</div><!-- Fim rodape -->
+
+
+</body>
+</html>

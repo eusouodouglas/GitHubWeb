@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html>
+
+<head>
+
+<title>WEB</title>
+
+
+<link href="css/estilo.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Aqui chamamos o arquivo estilo.css da pasta "CSS"   -->
+
+
+</head>
+
+<body>
+
+
+<!-- a Tag DIV são caixas que recebem a formatação do arquivo CSS, escrevemos "<div ></div>" assim ela fica sem formatação, para chamarmos a formatação do arquivo CSS, escrevemos "<div class="cabecalho" ></div>" com as "class" chamamos a class que foi criada no css, no caso a class "cabelhalho"  -->
+
+<!-- A "class" pode ser usada em outros elementos alem da "DIV" -->
+
+
+<div class="cabecalho" >
+
+                <div class="logo" >                
+                <a href="index.html"><img src="img/logo.jpg" width="410" height="220" title="Ir para página inicial"></a><!-- Insere a imagem do logo da pasta IMG -->
+
+                </div><!-- Fim Logo -->
+                
+                
+                <div class="banner" >
+                <img src="img/banner.jpg" width="570" height="220" ;><!-- Insere a imagem do banner da pasta IMG -->
+
+                </div><!-- Fim Banner -->
+                         
+                      
+                <div id="menu">
+        
+                <ul >
+                   
+                <li><a href="Institucional.html" > Institucional </a></li> <!-- link menu -->
+                <li><a href="FaleConosco.html" > Fale Conosco </a></li> <!-- link menu -->
+                <li><a href="Anuncios.html" > Anúncios </a></li> <!-- link menu -->
+                <li><a href="CadastroUsuario.html" > Cadastro de usuários </a></li> <!-- link menu -->
+                <li><a href="Login.html" > Login </a></li> <!-- link menu -->
+                <li><a href="CadastroAnuncio.html" > Cadastro de anúncios </a></li> <!-- link menu -->
+            
+                </ul>
+                
+                </div>
+
+                 
+                
+</div> <!-- Fim Cabeçalho -->
+
+
+<div style="overflow: auto; height: 750px; background-color:"white;"> <!-- Insere barra de rolagem -->
+
+<div class="conteudo" style="height:750px;"> <!-- Inicio do cadastro de anuncios -->
+
+<pre> <!-- Inicio de quebra linha -->
+
+</pre> <!-- Fim de quebra linha -->
+
+		<h1 style="color:black; text-align:center;">Cadastre seu Anúncio</h1> <!-- Insere titulo de cadastro de anuncio -->		
+		<form method="opcoes" style="text-align:center;"> <!-- Cria formulario de opções para selecionar -->
+		<p style="color:black; font-size:140%;">Que tipo de imóvel você quer alugar?</p> <!-- Insere paragrafo -->
+
+	
+	        <select name="selecione" style="font-size:140%;"> <--! Inicio de formulario -->
+		<option>Casa</option>
+		<option>Apartamento</option> 
+		<option>Kitinet</option>
+		<option>Outros</option>
+	        </select><br /> <!-- Fim de formulario -->
+
+	<p style="color:black; font-size:140%;">Em caso de "Outros", informe qual:</p> <!-- Insere paragrafo -->
+		<input class="campo" "style="font-size:140%;" id="campo" type="text" aria-label="nome"> <!-- Insere campo para preencher -->
+
+	<p style="color:black; font-size:140%;">Informe onde fica seu imóvel:</p> <!-- Insere paragrafo -->
+
+	<div class="endereco"> 
+		<input class="campo" "style="font-size:140%;" id="campo" type="text" aria-label="nome" placeholder="Endereço. Ex: Rua x"> <!-- Cria campo para preencher -->
+	</div>
+
+	<div class="numero"> 
+		<input class="campo" "style="font-size:140%;" id="campo" type="text" aria-label="nome" placeholder="Numero"> <!-- Cria campo para preencher -->
+	</div>
+
+	<div class="bairro"> 
+		<input class="campo" "style="font-size:140%;" id="campo" type="text" aria-label="nome" placeholder="Bairro"> <!-- Cria campo para preencher -->
+	</div>
+
+	<div class="cidade"> 
+		<input class="campo" "style="font-size:140%;" id="campo" type="text" aria-label="nome" placeholder="Cidade"> <!-- Cria campo para preencher -->
+	</div>
+
+	<div class="estado"> 
+		<input class="campo" "style="font-size:140%;" id="campo" type="text" aria-label="nome" placeholder="Estado"> <!-- Cria campo para preencher -->
+	</div>
+
+	<div class="cep"> 
+		<input class="campo" "style="font-size:140%;" id="campo" type="text" aria-label="nome" placeholder="CEP"> <!-- Cria campo para preencher -->
+	</div>
+
+	<div class="pontodereferencia">
+		<input class="campo" "style="font-size:140%;" id="campo" type="text" aria-label="nome" placeholder="Ponto de Referência"> <!-- Cria campo para preencher -->
+	</div>
+
+	<p style="color:black; font-size:140%;">Descreva seu imóvel:</p> <!-- Insere paragrafo -->
+	<textarea rows="10" cols="40" maxlength="500"></textarea> <!-- Cria caixa de texto -->
+	
+	<p style="color:black; font-size:140%;">Informe o valor do aluguel:</p> <!-- Insere paragrafo -->
+	<div class="valor"> 
+     		<label for="campo" style="text-align:center; font-size:140%; color:black;">R$</label> <!-- Insere caracteres R$ -->
+     		<input class="campo" "style="font-size:140%; width: 300px;" id="campo" type="text" aria-label="valor" placeholder="0,00"> <!-- Cria campo para preencher -->
+	</div>
+
+	<p style="color:black; font-size:140%;">Selecione fotos do seu imóvel:</p> <!-- Insere paragrafo -->
+		<input type="hidden" name="MAX_FILE_SIZE" value="100" /> <input name="file" type="file" /> <!-- Busca imagem no computador -->
+	</form> <!-- Fim de formulario -->
+
+<pre> <!-- Inicio de quebra linha -->
+
+
+
+</pre> <!-- Fim de quebra linha -->
+
+	<script>
+                        function funcao1()
+                        {
+                        alert("Cadastro de anúncio efetivado com sucesso!");
+                        }
+                        </script>
+
+<div id="botao">
+                        <input type="button" onclick="funcao1()" value="  Cadastrar  " class="botaoEnviar2" />
+                        </div>
+                    
+</div><!-- Fim conteudo -->
+
+</div> <!-- Fim de conteudo -->
+
+
+<div class="rodape" > <!-- Inicio de rodape -->
+<p style="text-align:center;">© Copyright Alugaqui, todos os direitos reservados </p> <!-- Insere texto de rodape -->
+</div><!-- Fim rodape -->
+
+

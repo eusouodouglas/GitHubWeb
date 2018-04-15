@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html>
+
+<head>
+
+<title>WEB</title>
+
+<link href="css/estilo.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Aqui chamamos o arquivo estilo.css da pasta "CSS"   -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("Table").hide();
+    });
+    $("#show").click(function(){
+        $("Table").show();
+    });
+});
+</script>
+
+
+</head>
+
+<body>
+
+<!-- a Tag DIV são caixas que recebem a formatação do arquivo CSS, escrevemos "<div ></div>" assim ela fica sem formatação, para chamarmos a formatação do arquivo CSS, escrevemos "<div class="cabecalho" ></div>" com as "class" chamamos a class que foi criada no css, no caso a class "cabelhalho"  -->
+
+<!-- A "class" pode ser usada em outros elementos alem da "DIV" -->
+
+
+<div class="cabecalho" >
+
+  				<div class="logo" >                
+                <a href="index.html"><img src="img/logo.jpg" width="410" height="220" title="Ir para página inicial"></a><!-- Insere a imagem do logo da pasta IMG -->
+
+                </div><!-- Fim Logo -->
+                
+                
+                <div class="banner" >
+                <img src="img/banner.jpg" width="570" height="220" ;><!-- Insere a imagem do banner da pasta IMG -->
+
+                </div><!-- Fim Banner -->
+                         
+                      
+                <div id="menu">
+        
+                <ul >
+                   
+                <li><a href="Institucional.html" > Institucional </a></li> <!-- link menu -->
+                <li><a href="FaleConosco.html" > Fale Conosco </a></li> <!-- link menu -->
+                <li><a href="Anuncios.html" > Anúncios </a></li> <!-- link menu -->
+                <li><a href="CadastroUsuario.html" > Cadastro de usuários </a></li> <!-- link menu -->
+                <li><a href="Login.html" > Login </a></li> <!-- link menu -->
+                <li><a href="CadastroAnuncio.html" > Cadastro de anúncios </a></li> <!-- link menu -->
+            
+                </ul>
+                
+                </div>
+
+                 
+                
+</div> <!-- Fim Cabeçalho -->
+
+<div class="conteudo" style="height:450px" /> 
+
+					<div class="texto" >
+                    <h1>Super Ofertas de imóveis</h1>
+                    
+                    <p>
+					O Alugaqui é um site que possibilita a comunicação entre pessoas da cidade de Alegre e donos de imóveis. Se o orçamento vestá apertado, estúdios, pequenos apartamentos ou casas são ótimas opções. Já para quem viaja em grupo e quer a facilidade de poder cozinhar sua própria comida, nada melhor do que alugar uma casa espaçosa, com direito a jardim, piscina e churrasqueira.</p>
+                    <p> </br>   </br>
+                        
+                        <center> <b>Ofertas patrocinadas:</b> </center>
+                    </p>
+
+ <div id="botao">
+
+<button id="hide">Esconder</button>
+<button id="show">Mostrar</button>
+
+</div>
+
+                    <Table>
+ <tr>
+
+  <td><div class="foto" ><a href="Anuncio1.html"><IMG src="img/casa1.jpg" WIDTH="280" height="200"></a>
+  <td><div class="foto" ><a href="Anuncio2.html"><IMG src="img/casa2.jpg" WIDTH="280" height="200"></a>
+  <td><div class="foto" ><a href="Anuncio3.html"><IMG src="img/casa3.jpg" WIDTH="280" height="200"></a>
+ </tr>
+ 
+                    </Table>
+                    
+                    </div><!-- Fim Texto -->
+      
+
+
+                  
+                    
+                    
+</div><!-- Fim conteudo -->
+
+
+<div class="rodape" > <!-- Inicio de rodape -->
+<p style="text-align:center;">© Copyright Alugaqui, todos os direitos reservados </p> <!-- Insere texto de rodape -->
+</div><!-- Fim rodape -->
+
+
+</body>
+</html>
